@@ -99,7 +99,7 @@ const QismKarateen = () => {
 
   return (
     <section id="who" className="max-w-7xl mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold mb-4 text-slate-900">We Work With</h2>
+      <h2 className="text-3xl font-bold mb-4 text-sky-400">We Work With</h2>
       <p className="text-neutral-600 mb-8">
         From startups to retail chains — anyone who needs reliable, verified, and efficient sourcing from China & Pakistan.
       </p>
@@ -108,7 +108,8 @@ const QismKarateen = () => {
         {clients.map((c, i) => (
           <div
             key={i}
-            className="rounded-2xl p-6 bg-gradient-to-br from-white/6 to-white/3 border border-white/5 hover:scale-102 transform transition shadow-md"
+            className="rounded-2xl p-6 bg-gradient-to-br from-white/6 to-white/3 border
+             border-white/5 hover:scale-102 transform transition shadow-md"
           >
             <h3 className="font-semibold text-white">{c}</h3>
             <p className="mt-2 text-sm text-neutral-300">
@@ -256,14 +257,14 @@ const QismProcess = () => {
       <h2 className="text-3xl font-bold mb-4">Our Complete Process</h2>
       <p className="text-neutral-600 mb-6">A modular end-to-end workflow — choose any service or let us manage everything.</p>
 
-      <ol className="space-y-4">
+      <ol className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {steps.map((s, idx) => (
           <li key={idx} className="flex gap-4 items-start">
             <div className="flex-none w-10 h-10 rounded-full bg-sky-600 text-white grid place-items-center font-semibold">
               {idx + 1}
             </div>
             <div>
-              <div className="font-semibold text-slate-900">{s}</div>
+              <div className="font-semibold text-sky-400">{s}</div>
               <div className="text-sm text-neutral-400">Step {idx + 1} description & deliverables.</div>
             </div>
           </li>
@@ -281,12 +282,12 @@ const QismProcess = () => {
 
 const QismPain = () => {
   return (
-    <section className="bg-neutral-900/40 py-16">
-      <div className="max-w-7xl mx-auto px-6 text-white">
+    <section className="bg-gradient-to-b from-white to-sky-50  py-16">
+      <div className="max-w-7xl mx-auto px-6 text-sky-400">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-3">Pain Points We Solve</h3>
-            <ul className="space-y-2 text-neutral-200">
+            <ul className="space-y-2 text-gray-500">
               <li>• Unverified suppliers and factory scams</li>
               <li>• Poor communication & hidden costs</li>
               <li>• Missed deadlines & low-quality shipments</li>
@@ -296,12 +297,12 @@ const QismPain = () => {
 
           <div>
             <h3 className="text-2xl font-bold mb-3">Guarantee & Risk Reversal</h3>
-            <ul className="space-y-2 text-neutral-200">
+            <ul className="space-y-2 text-gray-500">
               <li>• 100% Refund - If Benchmarks Are Not Met</li>
               <li>• Replacement Assurance - If Quality Test Fails</li>
               <li>• Transparency – Zero Leakage Guarantee</li>
             </ul>
-            <p className="mt-4 text-neutral-300">
+            <p className="mt-4 text-indigo-500">
               We remove your risk — so you can focus on growth.
             </p>
           </div>
